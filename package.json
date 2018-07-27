@@ -1,0 +1,14 @@
+{
+  "name": "kdr_portfolio",
+  "version": "1.0.0",
+  "description": "Responsive portfolio website",
+  "main": "server.js",
+  "scripts": {
+    "sass": "node-sass -w SCSS/ -o public/css/ --recursive"
+  },
+  "author": "Kerry Russell",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.9.2"
+  }
+}
