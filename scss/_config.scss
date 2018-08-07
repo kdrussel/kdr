@@ -1,11 +1,11 @@
 $primary-color: #444;
 $secondary-color: #eece1a;
 $show-home-image: true;
-$home-image: url(../img/bg1.jpeg)
-$background-opacity: 0.9;
+$home-image: url(../img/bg1.jpeg);
+$background-opacity: 0.6;
 
 @mixin easeOut {
-	transition: all 1s ease-out;
+	transition: all 0.5s ease-out;
 }
 
 @mixin background {
@@ -14,15 +14,17 @@ $background-opacity: 0.9;
 			background: $home-image;
 			background-attachment: fixed;
 			background-size: cover;
-			.overlay {
+			&:after {
+				content: '';
 				position: absolute;
 				top: 0;
 				right: 0;
 				width: 100%;
 				height: 100%;
-				z-index: -1;
 				background: rgba($primary-color, $background-opacity);
+				z-index: -1;
 			}
 		}
 	}
 }
+
